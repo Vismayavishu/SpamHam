@@ -1,0 +1,17 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import sklearn
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn import metrics
+import seaborn as sn
+from sklearn.metrics import confusion_matrix
+import re
+%matplotlib inline
+from sklearn import model_selection,preprocessing,naive_bayes,metrics
+from sklearn.feature_extraction.text import TfidfVectorizer,CountVectorizer
+
+df_inputdata=pd.read_csv('D:\intership1\SpamHam.csv',usecols = [0,1],encoding='latin-1')
+
+df_inputdata.head()
